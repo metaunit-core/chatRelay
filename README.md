@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <title>Cognivex → ChatGPT Relay</title>
 <script src="upload.js" defer></script>
 <script src="inject.js" defer></script>
+<style>
+    body {
+        background:#0f0f0f;
+        color:white;
+        font-family:Arial;
+        padding:40px;
+    }
+</style>
 </head>
 
-<body style="background:#111; color:white; font-family:Arial; padding:30px;">
-    <h2>🚀 Cognivex Relay 正在自动上传到 ChatGPT…</h2>
+<body>
+    <h1>🚀 Cognivex Relay 正在自动上传到 ChatGPT…</h1>
     <p>请稍候 1–2 秒，页面将自动跳转并提交图片。</p>
 
     <div id="status" style="margin-top:20px; color:#4ade80;"></div>
 </body>
 </html>
+
+
 window.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(location.search);
     const payload = params.get("payload");
